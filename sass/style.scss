@@ -1,0 +1,29 @@
+@import "reset";
+@import "./bootstap_scss/bootstrap.scss";
+@import "variable";
+@import "mixin";
+@import "extend";
+@import "function";
+@import "bootstap_custom";
+@import "./slick/slick.scss";
+@import "./slick/slick-theme.scss";
+
+
+// =======================
+@import "index"; 
+@import "header";
+
+// ======================= 
+@import "experience";
+@import "experience-pad";
+@import "experience-mob";
+@import "about";
+@import "about-pad";
+@import "skills";
+@import "profolio";
+
+
+@import "footer";
+
+
+  

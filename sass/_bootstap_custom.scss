@@ -1,0 +1,29 @@
+@media (max-width: $mq57598) {
+  .container {
+    max-width: 550px;
+  }
+}
+
+@media (min-width: $mq576) {
+  .container {
+    max-width: 560px;
+  }
+}
+
+@media (min-width: $mq768) {
+  .container {
+    max-width: 740px;
+  }
+}
+
+@media (min-width: $mq992) {
+  .container {
+    max-width: 980px;
+  }
+}
+
+@media (min-width: $mq1200) {
+  .container {
+    max-width: 1170px;
+  }
+}

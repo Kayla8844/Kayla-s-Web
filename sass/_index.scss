@@ -1,0 +1,98 @@
+html,
+body {
+  background-color: rgb(235, 235, 235);
+  color: $text-color;
+  font-size: $font-size;
+  font-family: $font-style-ch;
+}
+
+.font_en {
+  font-family: $font-style-en;
+}
+
+*::selection {
+  color: white;
+  background-color: #7a7265;
+  white-space: nowrap;
+}
+
+a {
+  color: $link-color;
+  &:hover {
+    color: $title-color;
+  }
+}
+
+p {
+  margin-bottom: 5px;
+}
+
+h4 {
+  font-weight: bold;
+}
+
+.fadeInUp {
+  animation-name: fadeInUp;
+  animation-duration: 1.5s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  @keyframes fadeInUp {
+    0% {
+      opacity: 0;
+      position: relative;
+      top: 200px;
+    }
+    100% {
+      opacity: 1;
+      position: relative;
+      top: 0;
+    }
+  }
+}
+
+#gotop {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #b4be13;
+  font-size: 35px;
+	width: 20px;
+	height: 20px;
+	background-color: white;
+	position: fixed;
+	bottom: 24px;
+	right: 32px;
+  cursor: pointer;
+  border: 1.5px solid transparent;
+  border-radius: 10px;
+  transition: all 0.2s;
+  // opacity: 0.7;
+  @include mobile() {
+    font-size: 28px;
+  }
+  &:hover {
+    // opacity: 1;
+    color: #c5d11c;
+  }
+}
+
+// .gotop-ani {
+  
+//   animation-name: gotop;
+//   animation-duration: 1.5s;
+//   animation-timing-function: ease-in-out;
+//   animation-iteration-count: 1;
+//   animation-fill-mode: forwards;
+//   @keyframes gotop{
+//     0% {
+//       position: fixed;
+//       bottom: 0px;
+//     }
+//     100% {
+//       position: fixed;
+//       bottom: 20px;
+//     }
+//   }
+// }
+

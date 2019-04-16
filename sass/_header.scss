@@ -1,0 +1,327 @@
+// header
+header {
+  width: 100%;
+  height: 85vh;
+  font-family: $font-style-en;
+  padding: 0 0 40px 0;
+  
+  @include pc-s() {
+    height: auto;
+  }
+
+  // 導覽列
+  nav {
+    background-color: $color2;
+    width: 100%;
+    height: 50px;
+    padding: 0 20px;
+    position: fixed;
+    top: 0;
+    z-index: 999;
+
+    @include pad-s() {
+      padding: 0 10px;
+    }
+  
+    a {
+      color: #ffffff;
+      margin: 0 0 0 20px;
+      position: fixed;
+      text-decoration: underline;
+  
+      h1 {
+        display: block;
+        font-size: $font-size-h1;
+        font-family: $title-font;
+        // font-weight: bold;
+        font-size: 24px;
+        height: 50px;
+        position: fixed;
+        top: 11px;
+        &:hover {
+          text-decoration: underline;
+          color: white;
+        }
+        
+      }
+    }
+  
+    .menu_all {
+      display: block;
+      float: right;
+      position: fixed;
+      top: 0;
+      right: 20px;
+      
+      // display: table-cell;
+      // vertical-align: middle;
+
+      @include pad-s() {
+        display: none;
+      }
+
+      .menu_btn {
+        height: 50px;
+        background-color: transparent;
+        border: 0px;
+        cursor: pointer;
+        transition: 0.3s;
+        color: white;
+        font-size: 16px;
+        font-weight: bold;
+        
+
+        .menu_ch {
+          font-family: $font-style-ch;
+        }
+
+        &:hover {
+          background-color: $link-color-hover;
+        }
+      }
+    }
+
+    .menu_mob_btn_all {
+      display: none;
+      padding-top: 6px;
+      float: right;
+      position: fixed;
+      top: 0;
+      right: 11px;
+      
+      @include pad-s() {
+        display: block;
+      }
+
+      .menu_mob_btn {
+        width: 35px;
+        height: 35px;
+        cursor: pointer;
+        background-color: transparent;
+        border-radius: 5px;
+        transition: 0.3s;
+
+        &:hover {
+          background-color: #c9b89d;
+        }
+      }
+    }
+  }
+  // 導覽列 end
+
+  // 手機導覽列表
+  .menu_mob_list_all {
+    display: none;
+    background-color: rgba(255, 255, 255, 0.9);
+    cursor: pointer;
+    position: fixed;
+    top: 50px;
+    width: 100%;
+    z-index: 50;
+    
+
+    .menu_mob_list {
+      color: $link-color;
+      margin: 0 0 0 20px;
+      padding: 13px 0;
+      border-bottom: 1.5px solid rgb(240, 230, 210);
+      border-bottom-width: 70%;
+
+
+      &:nth-child(4) {
+        border-bottom: 0;
+      }
+
+      &:hover {
+        transition: 0.3s;
+        background-color: rgba(238, 232, 223, 0.5);
+      }
+
+      .font_en {
+        font-family: $font-style-ch;
+        font-weight: bold;
+      }
+
+      .menu_ch {
+        font-family: $font-style-ch;
+        font-weight: bold;
+      }
+    }
+  }
+
+  // 手機導覽列表 end
+  
+
+  // 歡迎視窗all
+
+  .greet_all {
+    
+
+    .greet_title {
+      display: block;
+      width: 70%;
+      // height: 90vh;
+      padding: 12%;
+      text-align: center;
+      color: rgb(131, 120, 92);
+      margin: 150px auto 0 auto;
+      background-image: url(../image/header視窗-01.png);
+      background-repeat: no-repeat;
+      background-size: 100% 100%;
+      background-position-x: center;
+      line-height: 1.5;
+      opacity: 0;
+      
+      
+      @include pc-s() {
+        width: 80%;
+      }
+  
+      @include pad() {
+        line-height: 1.2;
+        margin: 100px auto 0 auto;
+      }
+  
+      @include pad-s() {
+        width: 90%;
+        line-height: 1.1;
+      }
+  
+      @include mobile() {
+        padding: 12%;
+        // height: 40vh;
+        line-height: 0.8;
+        margin: 80px auto 0 auto;
+      }
+  
+      @include mobile-s() {
+        padding: 11%;
+        line-height: 0.65;
+      }
+  
+      // 標題英文
+      .title_en {
+        font-family: "Bree Serif";
+        // font-size: pxToVw(35);
+        font-size: 30px;
+        position: relative;
+        left: 10px;
+        @include pc-s() {
+          font-size: 28px;
+        }
+  
+        @include pad() {
+          font-size: 24px;
+        }
+  
+        @include pad-s() {
+          font-size: 20px;
+        }
+  
+        @include mobile() {
+          font-size: 14px;
+        }
+  
+        @include mobile-s() {
+          font-size: 12px;
+        }
+        
+      }
+      // 標題英文 end
+  
+      // 標題中文
+      .title_ch {
+        font-family: $font-style-ch;
+        // font-size: pxToVw(20);
+        font-size: 18px;
+        font-weight: bold;
+        position: relative;
+        left: 10px;
+        @include pc-s() {
+          // font-size: pxToVw(25);
+          
+        }
+  
+        @include pad() {
+          font-size: 16px;
+          // font-size: pxToVw(30);
+        }
+  
+        @include pad-s() {
+          font-size: 14px;
+          // font-size: pxToVw(30);
+        }
+  
+        @include mobile() {
+          font-size: 12px;
+          // font-size: pxToVw(30);
+        }
+  
+        @include mobile-s() {
+          font-size: 10px;
+        }
+        
+      }
+  
+      .title_last {
+        display: block;
+        font-family: "Bree Serif";
+        font-weight: normal;
+        position: relative;
+        left: 8px;
+  
+        @include mobile() {
+          margin: 8px;
+        }
+  
+        @include mobile-s() {
+          margin: 10px;
+        }
+  
+      }
+      // 標題中文 end
+    
+    
+    }
+
+    .arrow {
+      // 三角形
+      width: 0;
+      height: 0;
+      border-style: solid;
+      border-width: 15px 15px 0 15px;
+      border-color: $color2 transparent transparent transparent;
+      // 三角形 end
+      // padding: 30px;
+      margin: 40px auto 0 auto ;
+      animation-name: arrow; 
+      animation-duration: 3s;
+      animation-timing-function: ease-in-out; 
+      animation-iteration-count: infinite;
+      position: relative;
+      text-align: center;
+      cursor: pointer;
+  
+      @keyframes arrow {
+        0% {top: 0px;}
+        50% {top: 10px;}
+        100% {top: 0px;}
+      }
+  
+      @include pad() {
+        border-width: 10px 10px 0 10px;
+        margin: 20px auto 0 auto;
+      }
+  
+      @include mobile() {
+        border-width: 7px 7px 0 7px;
+  
+      }
+  
+    }
+  }
+  // 歡迎視窗all end
+
+}
+// header end
+

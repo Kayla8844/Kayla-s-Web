@@ -1,0 +1,254 @@
+#skills {
+  background-color: rgb(245, 245, 245);
+  padding: 40px 30px;
+
+  .title_s {
+    @include title-s();
+  }
+
+  .skills_content {
+    width: 100%;
+    margin: 40px auto;
+    // position: relative;
+    // top: 200px;
+    opacity: 0;
+
+
+    .skill_list {
+      width: 50%;
+      margin: 40px auto;
+
+      @include pc-s() {
+        width: 80%;
+      }
+
+      @include mobile() {
+        width: 100%;
+      }
+
+      .skill_title {
+        font-weight: bold;
+        line-height: 1.2;
+
+        h5 {
+          font-size: 20px;
+          font-weight: bold;
+          font-family: $font-style-en;
+          @include mobile-s() {
+            font-size: 16px;
+          }
+        }
+
+        ul {
+          list-style-type: disc;
+          margin-left: 2em;
+          
+          li {
+            font-size: 14px;
+            list-style-type: disc;
+            margin-bottom: 10px;
+            font-family: $font-style-ch;
+            line-height: 1.5;
+
+            @include mobile-s() {
+              list-style-type: disc;
+              font-size: 12px;
+            }
+
+            a {
+              color: $title-color;
+              font-style: italic;
+            }
+          }
+        }
+      }
+
+      .progress_bar {
+        width: 100%;
+        height: 15px;
+        background-color: #dadada;
+        margin: 25px 0;
+        border-radius: 5px;
+        text-align: left;
+
+        .progress_in {
+          width: 0%;
+          height: 15px;
+          background-color: $color1;
+          border-radius: 5px;
+
+          animation-duration: 5s;
+          animation-timing-function: ease-in-out;
+          animation-iteration-count: 1;
+          animation-fill-mode: forwards;
+        }
+
+        .animated1 {
+          animation-name: progress1;
+
+          @keyframes progress1 {
+            20% {
+              width: 0%;
+            }
+
+            100% {
+              width: 60%;
+            }
+          }
+        }
+
+        .animated2 {
+          animation-name: progress2;
+
+          @keyframes progress2 {
+            20% {
+              width: 0%;
+            }
+
+            100% {
+              width: 60%;
+            }
+          }
+        }
+
+        .animated3 {
+          animation-name: progress3;
+
+          @keyframes progress3 {
+            20% {
+              width: 0%;
+            }
+
+            100% {
+              width: 70%;
+            }
+          }
+        }
+
+        .animated4 {
+          animation-name: progress4;
+
+          @keyframes progress4 {
+            20% {
+              width: 0%;
+            }
+
+            100% {
+              width: 50%;
+            }
+          }
+        }
+
+        .animated5 {
+          animation-name: progress5;
+
+          @keyframes progress5 {
+            20% {
+              width: 0%;
+            }
+
+            100% {
+              width: 50%;
+            }
+          }
+        }
+
+        .hex {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          width: 45px;
+          height: 55px;
+          margin: 0;
+          background-image: url(../image/六角形-02.png);
+          background-repeat: no-repeat;
+          background-size: contain;
+          position: relative;
+          bottom: 215%;
+
+
+          animation-duration: 5s;
+          animation-timing-function: ease-in-out;
+          animation-iteration-count: 1;
+          animation-fill-mode: forwards;
+
+          .percent {
+            font-size: 12px;
+            font-weight: bold;
+          }
+        }
+
+        .hex1_ani {
+          animation-name: hex1;
+
+          @keyframes hex1 {
+            20% {
+              left: 0%;
+            }
+
+            100% {
+              left: 56%;
+            }
+          }
+
+        }
+
+        .hex2_ani {
+          animation-name: hex2;
+
+          @keyframes hex2 {
+            20% {
+              left: 0%;
+            }
+
+            100% {
+              left: 56%;
+            }
+          }
+        }
+
+        .hex3_ani {
+          animation-name: hex3;
+
+          @keyframes hex3 {
+            20% {
+              left: 0%;
+            }
+
+            100% {
+              left: 66%;
+            }
+          }
+        }
+
+        .hex4_ani {
+          animation-name: hex4;
+
+          @keyframes hex4 {
+            20% {
+              left: 0%;
+            }
+
+            100% {
+              left: 46%;
+            }
+          }
+        }
+
+        .hex5_ani {
+          animation-name: hex5;
+
+          @keyframes hex5 {
+            20% {
+              left: 0%;
+            }
+
+            100% {
+              left: 46%;
+            }
+          }
+        }
+      }
+    }
+  }
+}

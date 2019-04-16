@@ -1,0 +1,112 @@
+#profolio {
+  width: 80%;
+  padding: 40px 20px;
+  // width: 60%;
+  margin: 0 auto;
+  @include pc-s() {
+    width: 90%;
+  }
+
+  @include mobile() {
+    width: 90%;
+  }
+
+
+  
+  .title_s {
+    @include title-s();
+  }
+
+  .profolio_content {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: center;
+    grid-gap: 30px;
+    margin: 40px auto;
+    opacity: 0;
+
+    @include pad() {
+      grid-template-columns: 1fr 1fr;
+    }
+
+    @include mobile() {
+      grid-template-columns: 1fr;
+    }
+
+    .profolio_list {
+      
+  
+      .prof_img_all {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #fff;
+        border: 1.5px solid $color1;
+        border-radius: 10px;
+        transition: all 0.3s;
+        overflow: hidden;
+        // box-shadow: 1px 1px 5px #bbbbbb;
+  
+        .prof_img {
+          margin: 10px;
+          border-radius: 10px;
+          overflow: hidden;
+          display: flex;
+          align-items: center;
+          // box-shadow: 0 0 1px gray;
+          
+          img {
+            display: block;
+            width: 100%;
+            // height: 180px;
+            border-radius: 10px;
+            transition: all 0.3s;
+            &:hover {
+              transform: scale(1.1)
+            }
+          }
+        }
+      }
+  
+      .prof_info {
+        margin: 5px 0;
+        font-weight: bold;
+        line-height: 1.6;
+  
+        .info_title {
+          margin: 0;
+        }
+  
+        .info_subtitle {
+          font-size: 12px;
+          margin: 0;
+          margin-bottom: 3px;
+          white-space: nowrap;
+          // font-style: italic;
+
+          // .fas {
+          //   color: $title-color;
+          // }
+
+        }
+
+        .codelist {
+          display: inline-block;
+          font-family: $font-style-en;
+          letter-spacing: 0.5px;
+          font-size: 12px;
+          color: white;
+          background-color: $color1;
+          padding: 4px 10px;
+          // border: 1.5px solid white;
+          border-radius: 3px;
+          margin-top: 5px;
+        }
+      }
+  
+    }
+  }
+
+
+  
+}
