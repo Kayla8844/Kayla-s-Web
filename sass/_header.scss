@@ -309,12 +309,12 @@ header {
       }
   
       @include pad() {
-        border-width: 10px 10px 0 10px;
+        border-width: 15px 15px 0 15px;
         margin: 20px auto 0 auto;
       }
   
       @include mobile() {
-        border-width: 7px 7px 0 7px;
+        // border-width: 15px 15px 0 15px;
   
       }
   
