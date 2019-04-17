@@ -68,8 +68,15 @@ h4 {
   border-radius: 10px;
   transition: all 0.2s;
   // opacity: 0.7;
+  @include pad() {
+    bottom: 20px;
+    right: 20px;
+  }
+
   @include mobile() {
     font-size: 28px;
+    bottom: 10px;
+    right: 10px;
   }
   &:hover {
     // opacity: 1;
