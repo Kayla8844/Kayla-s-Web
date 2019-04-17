@@ -9881,7 +9881,7 @@ header .greet_all .arrow {
 
 @media (max-width: 992px) {
   header .greet_all .arrow {
-    border-width: 15px 15px 0 15px;
+    border-width: 10px 10px 0 10px;
     margin: 20px auto 0 auto;
   }
 }
