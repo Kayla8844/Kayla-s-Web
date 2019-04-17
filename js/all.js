@@ -1,16 +1,16 @@
 $(document).ready(function () {
   // $('html').niceScroll();
 
-  // $('html').niceScroll({
-  //   cursorcolor: "#d4c4a9",
-  //   background: "#f0e8db",
-  //   autohidemode: false, 
-  //   cursorwidth: "10px", 
-  //   cursorborder: "0",
-  //   cursorborderradius: "20px",
-  //   cursorminheight: 100,
-  //   scrollspeed: 60,
-  // });
+  /* $('html').niceScroll({
+    cursorcolor: "#d4c4a9",
+    background: "#f0e8db",
+    autohidemode: false, 
+    cursorwidth: "10px", 
+    cursorborder: "0",
+    cursorborderradius: "20px",
+    cursorminheight: 100,
+    scrollspeed: 60,
+  }); */
 
   // 歡迎視窗和pad手機時間軸浮現
   $('.greet_title').animate({ opacity: 1 }, 1000);
