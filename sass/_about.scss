@@ -1,209 +1,179 @@
 #about {
-  width: 70%;
-  background-color: #ebebeb;
-  margin: 0 auto;
-  padding: 40px 0;
-
-  @include pc-s() {
-    width: 90%;
-  }
-
-  .title_s {
-    @include title-s();
-  }
-
-  pre {
-    white-space: pre-wrap;
-    word-wrap: break-word;
-  }
-
-  .about_content_all {
-    width: 100%;
-    opacity: 0;
-
-    .about_content {
-      display: flex;
-      flex-wrap: nowrap;
-      align-items: flex-start;
-      justify-content: center;
-      margin: 40px auto 0 auto;
-
-      @include pad-s() {
-        display: none;
-      }
-
-      // 照片/語言/興趣/聯絡
-      .img_lang_interests_contact {
-        width: 30%;
-
-        .slider {
-          width: 80%;
-          margin: 0 0 40px 0;
-          // border-radius: 10px;
-          img {
-            width: 100%;
-            border-radius: 10px;
-          }
-        }
-
-        .personal_info {
-          font-weight: bold;
-          font-size: 12px;
-          line-height: 25px;
-          margin-bottom: 10px;
-          .contect_info {
-            display: block;
-            width: fit-content;
-            color: $title-color;
-            padding: 1px 0;
-            .contect_icon {
-              margin-right: 5px;
-              font-size: 20px;
-            }
-
-            .fa-github {
-              font-size: 21px;
-            }
-          }
-        }
-
-        .lang_interests_contact_tb {
-          width: 100%;
-          font-weight: bold;
-          // border: 1px solid red;
-
-          .lang_title_th {
-            font-size: 18px;
-            @include pad() {
-              font-size: 16px;
-            }
-
-            .fas {
-              color: $title-color;
-              font-size: 24px;
-              padding: 0 5px 0 0;
-            }
-          }
-
-          .lang_tr {
-            .lang_td {
-              display: flex;
-              // justify-content: center;
-              flex-wrap: nowrap;
-              align-items: center;
-              padding: 10px 0;
-              font-size: 14px;
-              line-height: 1.7;
-              @include pad() {
-                font-size: 12px;
-              }
-
-              .lang_bar_all {
-                text-align: center;
-
-                .lang_bar {
-                  border-radius: 5px;
-                  width: 25px;
-                  height: 100px;
-                  background-color: $color1;
-                  margin: 10px 8px 5px 10px;
-
-                  .lang_bar_in2 {
-                    height: 50%;
-                    background-color: white;
-                    border-top-left-radius: 5px;
-                    border-top-right-radius: 5px;
-                  }
-                }
-              }
-
-              .en_bar_all {
-                margin: 0 10px;
-                width: 40%;
-
-                .en_bar_content {
-                  display: flex;
-                  align-items: center;
-                  justify-content: flex-start;
-                  margin: 0 0 5px 0;
-
-                  .en_bar {
-                    width: 80%;
-                    height: 10px;
-                    background-color: #fff;
-                    margin: 0 10px;
-                    border-radius: 5px;
-
-                    .en_bar_in {
-                      width: 50%;
-                      height: 10px;
-                      background-color: $color1;
-                      border-top-left-radius: 5px;
-                      border-bottom-left-radius: 5px;
-                    }
-
-                    .en_bar_in2 {
-                      width: 30%;
-                    }
-
-                    .en_bar_in3 {
-                      width: 65%;
-                    }
-                  }
-                }
-              }
-            }
-          }
-
-          .inte_tr {
-            .inte_td {
-              display: flex;
-              flex-wrap: wrap;
-              font-size: 14px;
-              padding: 10px 0 20px 0;
-
-              .inte_content {
-                text-align: center;
-                margin: 10px 20px 5px 0;
-                width: 21%;
-                @include pad() {
-                  font-size: 12px;
-                }
-
-                img {
-                  width: 90%;
-                }
-
-                .inte_txt {
-                  margin: 5px;
-                }
-              }
-            }
-          }
-        }
-      }
-      // 照片/語言/興趣/聯絡 end
-
-      // 自傳
-      .resume {
-        // width: 60%;
-        text-align: left;
-        margin: 0;
-
-        .name {
-          font-size: 24px;
-          font-weight: bold;
-          color: $title-color;
-        }
-
-        pre {
-          font-size: 16px;
-          font-family: $font-style-ch;
-          color: $text-color;
-          font-weight: bold;
-        }
-      }
-      // 自傳 end
+    width: 70%;
+    background-color: #ebebeb;
+    margin: 0 auto;
+    padding: 40px 0;
+    @include pc-s() {
+        width: 90%;
     }
-  }
+    .title_s {
+        @include title-s();
+    }
+    pre {
+        white-space: pre-wrap;
+        word-wrap: break-word;
+    }
+    .about_content_all {
+        width: 100%;
+        opacity: 0;
+        .about_content {
+            display: flex;
+            flex-wrap: nowrap;
+            align-items: flex-start;
+            justify-content: center;
+            margin: 40px auto 0 auto;
+            @include pad-s() {
+                display: none;
+            }
+            // 照片/語言/興趣/聯絡
+            .img_lang_interests_contact {
+                width: 30%;
+                .slider {
+                    width: 80%;
+                    margin: 0 0 40px 0;
+                    // border-radius: 10px;
+                    img {
+                        width: 100%;
+                        border-radius: 10px;
+                    }
+                }
+                .personal_info {
+                    font-weight: bold;
+                    font-size: 12px;
+                    line-height: 25px;
+                    margin-bottom: 10px;
+                    .contect_info {
+                        display: block;
+                        width: fit-content;
+                        color: $title-color;
+                        padding: 1px 0;
+                        .contect_icon {
+                            margin-right: 5px;
+                            font-size: 20px;
+                        }
+                        .fa-github {
+                            font-size: 21px;
+                        }
+                    }
+                }
+                .lang_interests_contact_tb {
+                    width: 100%;
+                    font-weight: bold;
+                    // border: 1px solid red;
+                    .lang_title_th {
+                        font-size: 18px;
+                        @include pad() {
+                            font-size: 16px;
+                        }
+                        .fas {
+                            color: $title-color;
+                            font-size: 24px;
+                            padding: 0 5px 0 0;
+                        }
+                    }
+                    .lang_tr {
+                        .lang_td {
+                            display: flex;
+                            // justify-content: center;
+                            flex-wrap: nowrap;
+                            align-items: center;
+                            padding: 10px 0;
+                            font-size: 14px;
+                            line-height: 1.7;
+                            @include pad() {
+                                font-size: 12px;
+                            }
+                            .lang_bar_all {
+                                text-align: center;
+                                .lang_bar {
+                                    border-radius: 5px;
+                                    width: 25px;
+                                    height: 100px;
+                                    background-color: $color1;
+                                    margin: 10px 8px 5px 10px;
+                                    .lang_bar_in2 {
+                                        height: 50%;
+                                        background-color: white;
+                                        border-top-left-radius: 5px;
+                                        border-top-right-radius: 5px;
+                                    }
+                                }
+                            }
+                            .en_bar_all {
+                                margin: 0 10px;
+                                width: 40%;
+                                .en_bar_content {
+                                    display: flex;
+                                    align-items: center;
+                                    justify-content: flex-start;
+                                    margin: 0 0 5px 0;
+                                    .en_bar {
+                                        width: 80%;
+                                        height: 10px;
+                                        background-color: #fff;
+                                        margin: 0 10px;
+                                        border-radius: 5px;
+                                        .en_bar_in {
+                                            width: 50%;
+                                            height: 10px;
+                                            background-color: $color1;
+                                            border-top-left-radius: 5px;
+                                            border-bottom-left-radius: 5px;
+                                        }
+                                        .en_bar_in2 {
+                                            width: 30%;
+                                        }
+                                        .en_bar_in3 {
+                                            width: 65%;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    .inte_tr {
+                        .inte_td {
+                            display: flex;
+                            flex-wrap: wrap;
+                            font-size: 14px;
+                            padding: 10px 0 20px 0;
+                            .inte_content {
+                                text-align: center;
+                                margin: 10px 20px 5px 0;
+                                width: 21%;
+                                @include pad() {
+                                    font-size: 12px;
+                                }
+                                img {
+                                    width: 90%;
+                                }
+                                .inte_txt {
+                                    margin: 5px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            // 照片/語言/興趣/聯絡 end
+            // 自傳
+            .resume {
+                // width: 60%;
+                text-align: left;
+                margin: 0;
+                .name {
+                    font-size: 24px;
+                    font-weight: bold;
+                    color: $title-color;
+                }
+                pre {
+                    font-size: 16px;
+                    font-family: $font-style-ch;
+                    color: $text-color;
+                    font-weight: bold;
+                }
+            }
+            // 自傳 end
+        }
+    }
 }
