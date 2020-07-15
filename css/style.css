@@ -10638,14 +10638,10 @@ header .greet_all .arrow {
   width: 30%;
 }
 
-#about .about_content_all .about_content .img_lang_interests_contact .slider {
+#about .about_content_all .about_content .img_lang_interests_contact .ying_photo {
   width: 80%;
-  margin: 0 0 40px 0;
-}
-
-#about .about_content_all .about_content .img_lang_interests_contact .slider img {
-  width: 100%;
   border-radius: 10px;
+  margin: 0 40px 20px 0;
 }
 
 #about .about_content_all .about_content .img_lang_interests_contact .personal_info {
@@ -10854,12 +10850,10 @@ header .greet_all .arrow {
   color: #8d9610;
 }
 
-.pad_about_content .content_row .pad_img_row .slider {
-  margin: 0 auto 30px auto;
-}
-
-.pad_about_content .content_row .pad_img_row .slider img {
+.pad_about_content .content_row .pad_img_row .ying_photo {
+  width: 80%;
   border-radius: 10px;
+  margin: 0 40px 20px 0;
 }
 
 .pad_about_content .content_row .pad_img_row .personal_info {

@@ -1,259 +1,219 @@
 .pad_about_content {
-  display: none;
-  width: 100%;
-  margin: 20px auto;
-  // position: relative;
-  // top: 200px;
-
-  @include pad-s() {
-    display: block;
-  }
-
-
-  // 照片/語言/興趣
-  .content_row {
-    display: flex;
-    width: 90%;
-    justify-content: center;
-    flex-wrap: nowrap;
-    margin: 40px auto;
-
-    .pad_img_row {
-      width: 45%;
-      // text-align: center;
-      font-weight: bold;
-      color: $title-color;
-
-      .slider {
-        margin: 0 auto 30px auto;
-        
-        img {
-          border-radius: 10px; 
-        }
-      }
-
-      .personal_info {
-        font-weight: bold;
-        font-size: 12px;
-        line-height: 20px;
-        margin-top: 5px;
-        .contect_info {
-          display: block;
-          width: fit-content;
-          color: $title-color;
-          padding: 1px 0;
-
-          .contect_icon {
-            margin-right: 5px;
-            font-size: 20px;
-            @include mobile-s() {
-              font-size: 12px;
-            }
-          }
-
-          .fa-github {
-            font-size: 21px;
-          }
-
-          .fa-envelope {
-            @include mobile() {
-              display: none;
-            }
-          }
-        }
-        p {
-          color: $text-color;
-        }
-      }
+    display: none;
+    width: 100%;
+    margin: 20px auto;
+    // position: relative;
+    // top: 200px;
+    @include pad-s() {
+        display: block;
     }
-
-    .lang_inte_content {
-      width: 50%;
-      // padding: 20px;
-      margin: 0 0 0 35px;
-      font-weight: bold;
-      white-space: nowrap;
-      @include mobile() {
-        margin: 0 0 0 25px;
-      }
-
-      .pad_content {
-        // width: 45%;
-        .pad_title {
-          font-size: 18px; 
-          @include pad() {
-            font-size: 16px; 
-          }
-          @include mobile() {
-            font-size: 14px; 
-          }
-    
-          .fas {
+    // 照片/語言/興趣
+    .content_row {
+        display: flex;
+        width: 90%;
+        justify-content: center;
+        flex-wrap: nowrap;
+        margin: 40px auto;
+        .pad_img_row {
+            width: 45%;
+            // text-align: center;
+            font-weight: bold;
             color: $title-color;
-            font-size: 24px; 
-            padding: 0 5px 0 0;
-          }
+            // .slider {
+            //     margin: 0 auto 30px auto;
+            //     img {
+            //         border-radius: 10px;
+            //     }
+            // }
+            .ying_photo {
+                width: 80%;
+                border-radius: 10px;
+                margin: 0 40px 20px 0;
+            }
+            .personal_info {
+                font-weight: bold;
+                font-size: 12px;
+                line-height: 20px;
+                margin-top: 5px;
+                .contect_info {
+                    display: block;
+                    width: fit-content;
+                    color: $title-color;
+                    padding: 1px 0;
+                    .contect_icon {
+                        margin-right: 5px;
+                        font-size: 20px;
+                        @include mobile-s() {
+                            font-size: 12px;
+                        }
+                    }
+                    .fa-github {
+                        font-size: 21px;
+                    }
+                    .fa-envelope {
+                        @include mobile() {
+                            display: none;
+                        }
+                    }
+                }
+                p {
+                    color: $text-color;
+                }
+            }
         }
-      }
-
-      .lang_all {
-        width: 100%;
-        
-        .lang_content {
-          display: flex;
-          flex-wrap: nowrap;
-          align-items: center;
-          padding: 10px 0 5px 0;
-          font-size: 14px;
-          line-height: 1.7;
-          @include pad() {
-            font-size: 12px;
-          }
-
-          @include mobile() {
-            justify-content: center;
-            padding: 0;
-          }
-          
-          .lang_bar_all {
-            text-align: center;
-      
-            .lang_bar {
-              border-radius: 5px; 
-              width: 25px;
-              height: 80px;
-              background-color: $color1;
-              margin: 10px 10px 5px 10px;
-
-              @include mobile() {
-                height: 60px;
-              }
-      
-              .lang_bar_in2 {
-                height: 50%;
-                background-color: white;
-                border-top-left-radius: 5px;
-                border-top-right-radius: 5px;
-              }
-      
-            }
-      
-            p {
-              margin: 0;
-            }
-          }
-      
-          .en_bar_all {
-            margin: 0 10px;
+        .lang_inte_content {
             width: 50%;
+            // padding: 20px;
+            margin: 0 0 0 35px;
+            font-weight: bold;
+            white-space: nowrap;
             @include mobile() {
-              display: none;
+                margin: 0 0 0 25px;
             }
-      
-            .en_bar_content {
-              display: flex;
-              align-items: center;
-              justify-content: flex-start;
-              margin: 0 0 5px 0;
-      
-              .en_bar {
+            .pad_content {
+                // width: 45%;
+                .pad_title {
+                    font-size: 18px;
+                    @include pad() {
+                        font-size: 16px;
+                    }
+                    @include mobile() {
+                        font-size: 14px;
+                    }
+                    .fas {
+                        color: $title-color;
+                        font-size: 24px;
+                        padding: 0 5px 0 0;
+                    }
+                }
+            }
+            .lang_all {
                 width: 100%;
-                height: 10px;
-                background-color: #fff;
-                margin: 0 0 0 10px;
-                border-radius: 5px;
-      
-                .en_bar_in {
-                  width: 50%;
-                  height: 10px;
-                  background-color: $color1;
-                  border-top-left-radius: 5px;
-                  border-bottom-left-radius: 5px;
+                .lang_content {
+                    display: flex;
+                    flex-wrap: nowrap;
+                    align-items: center;
+                    padding: 10px 0 5px 0;
+                    font-size: 14px;
+                    line-height: 1.7;
+                    @include pad() {
+                        font-size: 12px;
+                    }
+                    @include mobile() {
+                        justify-content: center;
+                        padding: 0;
+                    }
+                    .lang_bar_all {
+                        text-align: center;
+                        .lang_bar {
+                            border-radius: 5px;
+                            width: 25px;
+                            height: 80px;
+                            background-color: $color1;
+                            margin: 10px 10px 5px 10px;
+                            @include mobile() {
+                                height: 60px;
+                            }
+                            .lang_bar_in2 {
+                                height: 50%;
+                                background-color: white;
+                                border-top-left-radius: 5px;
+                                border-top-right-radius: 5px;
+                            }
+                        }
+                        p {
+                            margin: 0;
+                        }
+                    }
+                    .en_bar_all {
+                        margin: 0 10px;
+                        width: 50%;
+                        @include mobile() {
+                            display: none;
+                        }
+                        .en_bar_content {
+                            display: flex;
+                            align-items: center;
+                            justify-content: flex-start;
+                            margin: 0 0 5px 0;
+                            .en_bar {
+                                width: 100%;
+                                height: 10px;
+                                background-color: #fff;
+                                margin: 0 0 0 10px;
+                                border-radius: 5px;
+                                .en_bar_in {
+                                    width: 50%;
+                                    height: 10px;
+                                    background-color: $color1;
+                                    border-top-left-radius: 5px;
+                                    border-bottom-left-radius: 5px;
+                                }
+                                .en_bar_in2 {
+                                    width: 30%;
+                                }
+                                .en_bar_in3 {
+                                    width: 65%;
+                                }
+                            }
+                        }
+                    }
                 }
-      
-                .en_bar_in2 {
-                  width: 30%;
+            }
+            .inte_all {
+                width: 100%;
+                margin: 10px 0 0 0;
+                @include mobile() {
+                    margin: 0;
                 }
-      
-                .en_bar_in3 {
-                  width: 65%;
+                .inte_content {
+                    width: 100%;
+                    display: flex;
+                    flex-wrap: wrap;
+                    justify-content: space-between;
+                    .inte_list {
+                        text-align: center;
+                        margin: 10px 10px 0 0;
+                        width: 25%;
+                        @include pad() {
+                            font-size: 12px;
+                        }
+                        img {
+                            width: 80%;
+                        }
+                        .inte_txt {
+                            margin: 5px;
+                        }
+                    }
                 }
-              }
             }
-      
-          }
+            // 照片/語言/興趣/聯絡 end
         }
-
-      }
-      
-      .inte_all {
-        width: 100%;
-        margin: 10px 0 0 0;
-        @include mobile() {
-          margin: 0;
-        }
-
-        .inte_content {
-          width: 100%;
-          display: flex;
-          flex-wrap: wrap;
-          justify-content: space-between;
-      
-          .inte_list {
-            text-align: center;
-            margin: 10px 10px 0 0;
-            width: 25%;
-            @include pad() {
-              font-size: 12px;
+    }
+    // 照片/語言/興趣 end
+    // 自傳
+    .resume {
+        text-align: left;
+        margin: 0 20px;
+        .name {
+            font-size: 24px;
+            font-weight: bold;
+            color: $title-color;
+            @include mobile() {
+                font-size: 20px;
             }
-      
-            img {
-              width: 80%;
-            }
-      
-            .inte_txt {
-              margin: 5px;
-              
-            } 
-          }
         }
-      }
-
-      
-    
-      // 照片/語言/興趣/聯絡 end
+        .font_en {
+            @include mobile() {
+                font-size: 16px;
+            }
+        }
+        pre {
+            font-size: 16px;
+            font-family: $font-style-ch;
+            color: $text-color;
+            font-weight: bold;
+        }
     }
-  }
-  // 照片/語言/興趣 end
-
-  
-
-  // 自傳
-  .resume {
-    text-align: left;
-    margin: 0 20px;
-    
-    .name {
-      font-size: 24px;  
-      font-weight: bold;
-      color: $title-color;
-      @include mobile() {
-        font-size: 20px;
-      }
-    }
-
-    .font_en {
-      @include mobile() {
-        font-size: 16px;
-      }
-    }
-    
-    pre {
-      font-size: 16px;
-      font-family: $font-style-ch;
-      color: $text-color;
-      font-weight: bold;
-    }
-  }
-  // 自傳 end
+    // 自傳 end
 }

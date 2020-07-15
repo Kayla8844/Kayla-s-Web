@@ -28,14 +28,19 @@
             // 照片/語言/興趣/聯絡
             .img_lang_interests_contact {
                 width: 30%;
-                .slider {
+                // .slider {
+                //     width: 80%;
+                //     margin: 0 0 40px 0;
+                //     // border-radius: 10px;
+                //     img {
+                //         width: 100%;
+                //         border-radius: 10px;
+                //     }
+                // }
+                .ying_photo {
                     width: 80%;
-                    margin: 0 0 40px 0;
-                    // border-radius: 10px;
-                    img {
-                        width: 100%;
-                        border-radius: 10px;
-                    }
+                    border-radius: 10px;
+                    margin: 0 40px 20px 0;
                 }
                 .personal_info {
                     font-weight: bold;

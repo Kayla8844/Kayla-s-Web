@@ -1,64 +1,52 @@
 @mixin pc() {
-  @media (min-width: $mq1200) {
-    @content
-  }
-};
+    @media (min-width: $mq1200) {
+        @content;
+    }
+}
 
 @mixin pc-s() {
-  @media (max-width: $mq119998) {
-    @content
-  }
-};
-
+    @media (max-width: $mq119998) {
+        @content;
+    }
+}
 
 @mixin pad() {
-  @media (max-width: $mq992) {
-    @content
-  }
-};
+    @media (max-width: $mq992) {
+        @content;
+    }
+}
 
 @mixin pad-s() {
-  @media (max-width: $mq768) {
-    @content
-  }
-};
+    @media (max-width: $mq768) {
+        @content;
+    }
+}
 
 @mixin mobile() {
-  @media (max-width: $mq57598) {
-    @content
-  }
-};
+    @media (max-width: $mq57598) {
+        @content;
+    }
+}
 
 @mixin mobile-s() {
-  @media (max-width: $mq376) {
-    @content
-  }
-};
+    @media (max-width: $mq376) {
+        @content;
+    }
+}
 
 // ===========================================
 // 標題
 @mixin title-s() {
-  text-align: center;
-  font-size: 30px;
-  font-weight: bold;
-  // color: $title-color;
-  padding: 0 10px;
-  white-space: nowrap;
-  margin: 0 auto;
-
-  .font_en {
-    font-family: $font-style-en;
-    font-size: 18px;
-    color: $title-color;
-  }
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    // color: $title-color;
+    padding: 0 10px;
+    white-space: nowrap;
+    margin: 0 auto;
+    .font_en {
+        font-family: $font-style-en;
+        font-size: 18px;
+        color: $title-color;
+    }
 }
-
-
-
-
-
-
-
-
-
-
