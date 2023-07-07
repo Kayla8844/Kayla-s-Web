@@ -25,18 +25,17 @@
     font-family: $title-font;
     color: $text-color;
     font-weight: bold;
-  
+
     @include pad() {
       font-size: 30px;
     }
-  
+
     @include mobile-s() {
       font-size: 26px;
     }
-  
   }
 
-// ================================
+  // ================================
   // 時間軸區塊
 
   .title_s {
@@ -55,7 +54,6 @@
     // position: relative;
     // top: 200px;
     // opacity: 0;
-    
 
     @include pc-s() {
       width: 90%;
@@ -64,7 +62,7 @@
     // @include pad() {
     //   animation-delay: 0s;
     // }
-    
+
     // pc時間軸
     .time_bar_all {
       text-align: center;
@@ -72,11 +70,10 @@
       opacity: 0;
       position: relative;
       top: 200px;
-      
 
-  // =====================================
+      // =====================================
       // pc時間軸
-      
+
       .time_table {
         width: 90%;
         margin: 0 auto;
@@ -84,25 +81,23 @@
         @include pad() {
           width: 100%;
         }
-      
-        @include pad-s() {
-          display: none;    
-        }
-      
 
-  // =========================================
+        @include pad-s() {
+          display: none;
+        }
+
+        // =========================================
 
         // <!-- pc時間軸上面資訊 -->
         .time_list_content {
-    
           // pc得獎紀錄、華藝
           .time_list {
             width: 25%;
             text-align: center;
-            
+
             // display: flex;
-            
-    // =======================================
+
+            // =======================================
             // 文字資訊
             .time_list_data {
               margin: 10px 0;
@@ -111,7 +106,7 @@
               font-weight: bold;
               white-space: nowrap;
               text-align: center;
-    
+
               .time_list_title {
                 color: $title-color;
                 font-size: 16px;
@@ -121,11 +116,11 @@
                 color: $title-color;
                 font-size: 14px;
               }
-    
+
               .time_list_content {
                 font-size: 12px;
               }
-    
+
               .berg {
                 font-size: 12px;
               }
@@ -136,12 +131,12 @@
               }
             }
 
-    // =======================================
+            // =======================================
             // 虛線、圓圈
             .line_icon {
               text-align: center;
               margin: 0 auto;
-    
+
               .hex {
                 display: flex;
                 flex-wrap: nowrap;
@@ -155,22 +150,20 @@
                 background-position: 50%;
                 text-align: center;
                 margin: 0 auto;
-      
+
                 .fas {
                   color: white;
                   font-size: 24px;
-                  display: block; 
+                  display: block;
                   margin: 0 auto;
                   text-align: center;
                 }
-      
+
                 .fa-award {
                   font-size: 28px;
-                  
                 }
-
               }
-      
+
               .dashed_line {
                 width: 1px;
                 height: 20px;
@@ -179,13 +172,11 @@
                 margin: 0 auto;
                 text-decoration-style: dashed;
                 @include pad() {
-                  
                 }
-      
+
                 @include mobile() {
                   font-size: 26px;
                 }
-    
               }
 
               .circle {
@@ -197,15 +188,13 @@
                 border-radius: 50%;
               }
             }
-
           }
 
           .time_list_top {
-            vertical-align: bottom; 
+            vertical-align: bottom;
             position: relative;
             top: -4px;
           }
-
 
           .time_list_bottom {
             position: relative;
@@ -213,14 +202,13 @@
           }
         }
 
+        // =========================================
 
-  // =========================================
-  
         // 時間軸上的點
         .key_time_all {
           margin: 0 auto;
           // border: 1px solid red;
-  
+
           .key_time_td {
             width: 25%;
             text-align: center;
@@ -237,13 +225,13 @@
             }
 
             .time_bar_first {
-              border-top-left-radius: 5px; 
-              border-bottom-left-radius: 5px; 
+              border-top-left-radius: 5px;
+              border-bottom-left-radius: 5px;
             }
 
             .time_bar_last {
-              border-top-right-radius: 5px; 
-              border-bottom-right-radius: 5px; 
+              border-top-right-radius: 5px;
+              border-bottom-right-radius: 5px;
             }
 
             .key_time {
@@ -259,31 +247,21 @@
               color: white;
               z-index: 999;
               @include pad() {
-                font-size: 12px; 
+                font-size: 12px;
               }
-    
+
               @include mobile() {
-                font-size: 10px; 
+                font-size: 10px;
               }
             }
-
-            
           }
-          
         }
         // 時間軸上的點 end
-  
-        
-  
       }
-      
+
       // pc時間軸 end
     }
-  
 
-// ================================
-
-    
+    // ================================
   }
-    
 }

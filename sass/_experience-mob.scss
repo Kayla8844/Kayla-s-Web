@@ -8,35 +8,34 @@
   position: relative;
   top: 200px;
 
-  @include mobile() {
+  @include pad-s() {
     display: block;
   }
 
-// =====================================
+  // =====================================
 
   // 時間軸上的點和文字
   .time_table {
     width: 100%;
     margin: 0 auto;
     text-align: center;
-    
-// =========================================
+
+    // =========================================
 
     // <!-- pad時間軸上面資訊 -->
     .time_list_content {
-      
       // pad得獎紀錄、畢業
       .time_list {
         vertical-align: middle;
-        
-// =======================================
+
+        // =======================================
         // 虛線、圓圈
 
         .line_icon {
           display: flex;
           align-items: center;
           width: 95%;
-          
+
           &:nth-child(1) {
             justify-content: flex-end;
           }
@@ -58,39 +57,33 @@
             background-position: 50%;
             text-align: center;
             margin: 0;
-  
+
             .fas {
               color: white;
               font-size: 20px;
-              display: block; 
+              display: block;
               margin: 0 auto;
               text-align: center;
-
             }
-  
+
             .fa-award {
               font-size: 24px;
-
             }
-
-            
           }
-  
+
           .dashed_line {
-            width:90%;
+            width: 90%;
             // height: 2px;
             border-bottom: 1.5px dashed $color2;
             // background-color: $text-color;
             margin: 0;
             text-decoration-style: dashed;
             @include pad() {
-              
             }
-  
+
             @include mobile() {
               font-size: 26px;
             }
-
           }
 
           .circle {
@@ -107,9 +100,9 @@
           opacity: 0;
         }
 
-  // =======================================
-        
-// =======================================
+        // =======================================
+
+        // =======================================
         // 文字資訊
         .time_list_data {
           // margin: 15px auto 0 auto;
@@ -117,7 +110,6 @@
           font-weight: bold;
           white-space: nowrap;
           // padding: 10px 0;
-          
 
           .time_list_title {
             color: $title-color;
@@ -149,18 +141,14 @@
             font-size: 14px;
           }
         }
-
       }
-
 
       .pad_time_td1 {
         display: flex;
         // justify-content: flex-end;
         width: 100%;
         text-align: left;
-        
       }
-
 
       .time_bar_td {
         .pad_time_bar {
@@ -173,14 +161,12 @@
           border-radius: 5px;
         }
       }
-      
 
       .key_time_td {
         text-align: center;
         width: 15%;
-        
+
         // vertical-align: middle;
-        
 
         .key_time {
           padding: 3px 6px;
@@ -193,19 +179,17 @@
           z-index: 999;
 
           @include pad() {
-            font-size: 12px; 
+            font-size: 12px;
           }
 
           @include mobile() {
-            font-size: 10px; 
+            font-size: 10px;
           }
 
           .key_time_botm {
             margin-top: 25px;
           }
         }
-
-        
       }
 
       .mob_time_td3 {
@@ -213,10 +197,8 @@
         text-align: left;
       }
 
-      
-
       .time_list_top {
-        vertical-align: bottom; 
+        vertical-align: bottom;
       }
 
       .time_list_bottom {
@@ -225,11 +207,7 @@
       }
     }
 
-
-// =========================================
-
-    
-
+    // =========================================
   }
   // 時間軸上的點 end
 }

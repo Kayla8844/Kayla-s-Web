@@ -1,18 +1,9 @@
 #profolio {
-  width: 80%;
+  width: 100%;
   padding: 40px 20px;
   // width: 60%;
   margin: 0 auto;
-  @include pc-s() {
-    width: 90%;
-  }
 
-  @include mobile() {
-    width: 90%;
-  }
-
-
-  
   .title_s {
     @include title-s();
   }
@@ -24,6 +15,11 @@
     grid-gap: 30px;
     margin: 40px auto;
     opacity: 0;
+    width: 80%;
+
+    @include pc-s() {
+      width: 90%;
+    }
 
     @include pad() {
       grid-template-columns: 1fr 1fr;
@@ -34,8 +30,6 @@
     }
 
     .profolio_list {
-      
-  
       .prof_img_all {
         display: flex;
         justify-content: center;
@@ -46,7 +40,7 @@
         transition: all 0.3s;
         overflow: hidden;
         // box-shadow: 1px 1px 5px #bbbbbb;
-  
+
         .prof_img {
           margin: 10px;
           border-radius: 10px;
@@ -54,7 +48,7 @@
           display: flex;
           align-items: center;
           // box-shadow: 0 0 1px gray;
-          
+
           img {
             display: block;
             width: 100%;
@@ -62,21 +56,21 @@
             border-radius: 10px;
             transition: all 0.3s;
             &:hover {
-              transform: scale(1.1)
+              transform: scale(1.1);
             }
           }
         }
       }
-  
+
       .prof_info {
         margin: 5px 0;
         font-weight: bold;
         line-height: 1.6;
-  
+
         .info_title {
           margin: 0;
         }
-  
+
         .info_subtitle {
           font-size: 12px;
           margin: 0;
@@ -87,7 +81,6 @@
           // .fas {
           //   color: $title-color;
           // }
-
         }
 
         .codelist {
@@ -103,10 +96,6 @@
           margin-top: 5px;
         }
       }
-  
     }
   }
-
-
-  
 }
